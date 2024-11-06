@@ -1,0 +1,81 @@
+body{
+    background-color: lightblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+p{
+    font-size: 25px;
+}
+
+h1{
+    font-size: 60px;
+    margin: 0;
+}
+
+h2{
+    font-size: 70px;
+    margin: 0 0 30 0;
+}
+
+.container{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    padding: 15px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(https://i.pinimg.com/564x/6b/fb/5c/6bfb5c9e4c608f82a98b76da827de150.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#buttonAdd{
+    border: 1px solid black;
+    padding: 20px;
+    background-color: lightgreen;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
+
+#buttonMinus{
+    border: 1px solid black;
+    padding: 20px;
+    background-color: red;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#buttonReset{
+    border: 1px solid black;
+    padding: 20px;
+    background-color: yellow;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
+
+#buttonSave{
+    border: 1px solid black;
+    padding: 20px;
+    background-color: orange;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}

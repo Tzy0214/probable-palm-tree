@@ -1,0 +1,59 @@
+body{
+    background-color: lightblue;
+    text-align: center;
+}
+
+.container{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    display: flexbox;
+    padding: 10px;
+    margin: 20px auto;
+    border: 2px solid black;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    background-image: url(https://i.pinimg.com/564x/72/4f/8b/724f8baf4a92e45821a670d25b11d421.jpg);
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: -1;
+}
+
+input{
+    height: 50px;
+    margin: 20px 10px;
+    opacity: 0.9;
+}
+
+button{
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 30px 10px;
+    border: 1px solid black;
+    opacity: 0.9;
+}
+
+.inputField{
+    margin-top: 30px;
+}
+
+.buttons{
+    margin: 30px;
+}
+
+#resultEl{
+    font-size: 30px;
+    width: 200px;
+    background-color: white;
+    margin: 0 auto;
+    opacity: 0.9;
+}   

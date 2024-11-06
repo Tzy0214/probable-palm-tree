@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;  /* Horizontal centering */
+    align-items: center;      /* Vertical centering */
+    min-height: 100vh;        /* Full viewport height */
+    margin: 0;
+    background-image: url(table.png);
+}
+
+.container{
+    background-color: lightgrey;
+    align-items: center;
+    border: 2px solid black;
+    padding: 3vw;
+    text-align: center;
+    width: 220px;
+}
+
+.title{
+    text-align: center;
+    margin: 0px;
+    
+}

@@ -1,0 +1,81 @@
+///Array Methods and Object Manipulation///
+1. How does .map() work with an array of objects?
+
+const array1 = [
+    {
+        name: "Player1",
+        level: 100
+    },
+    {
+        name: "Player2",
+        level: 50
+    }
+]
+
+let nameOn = array1.map((x) => x.name)
+console.log(nameOn)
+
+
+> .map() is used to create a new array by applying a function to each element in the array. What would be the result of using .map() on shopItemData to return only an array of prices?
+
+let onlyPrice = shopItemData.map((x) => {x.})
+
+2. How does .filter() work, and why does it return an array?
+
+> .filter() creates a new array containing only elements that pass a specified condition. What would happen if we used .filter() to return only the items in shopItemData with a price over 60?
+
+const a = shopItemData.filter((x) => {x.price >60})
+
+3. How can we use .reduce() to sum up specific properties in an array of objects?
+
+const array1 = [1,2,3,4,5]
+const total = array1.reduce(sum)
+function sum(accumulator, element){
+    return accumulator + element
+}
+
+> .reduce() can accumulate values across array elements. How would you use .reduce() on the basket array to calculate the total cost of items in the basket?
+
+
+
+4. What happens if we use .find() versus .filter()?
+
+> .find() returns the first item that matches a condition, while .filter() returns all matching items as an array. Can you explain when it would be more effective to use .find() rather than .filter() in this project?
+
+5. How would you modify an object’s properties within an array?
+
+> When modifying properties like item within the basket, how does finding the object first and then updating it directly affect the original array?
+
+
+///Local Storage and Data Persistence///
+6. How does localStorage store data, and why do we need JSON.stringify()?
+
+>localStorage only stores data as strings. Why do we use JSON.stringify() on basket before saving it, and what would happen if we didn’t?
+
+7. How do we retrieve data from localStorage and use it as an array again?
+
+> When data is retrieved from localStorage, it’s in string form. How does JSON.parse() help us convert it back into an array?
+
+8. How can we ensure data from localStorage loads automatically when the page refreshes?
+
+> To make sure the basket persists, what specific steps are necessary to retrieve and initialize it immediately on page load?
+
+
+///Handling Conditional Logic and Edge Cases///
+9. What happens if an item in basket has a quantity of 0, and why do we filter it out?
+
+> Items with a quantity of zero don’t need to be in the basket. How does filtering out items with item: 0 impact the basket and the display on the page?
+
+10. How does the update function know which item’s quantity to update?
+
+> The update function takes an id as a parameter. Why is document.getElementById(id).innerHTML = search.item enough to target the correct item’s quantity?
+
+
+///Structuring Data and Functions Effectively///
+11. What could we do if we wanted to add more data (e.g., color, weight) to shopItemData objects?
+
+> If each item needed additional details, how would you add these to shopItemData and display them in the HTML with generateShop()?
+
+12. Why is it important to keep functions like calculation() separate?
+
+> Separating calculation() keeps the code modular. How could this approach help if you wanted to update calculation() later to display the price total as well?
